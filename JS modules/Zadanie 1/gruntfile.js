@@ -23,6 +23,7 @@ module.exports = function(grunt) {
   			}]
   		}
   	},
+
   	watch: {
 	    scripts: {
 	        files: ['workspace/sass/style.sass'],
@@ -31,25 +32,32 @@ module.exports = function(grunt) {
 	            spawn: false,
 	        },
 	    }
-	},
-	browserSync: {
-	    bsFiles: {
-	        src : ['workspace/index.html', 'workspace/sass/style.sass', 'workspace/css/style.css', 'workspace/js/scripts.js']
-	    },
-	    options: {
-	        server: {
-	            baseDir: ["workspace/sass/", "workspace/", "workspace/css/", "workspace/js/"]
-	        },
-	        watchTask: true
-	    }
-	}
+  	},
+
+  	browserSync: {
+  	    bsFiles: {
+  	        src : ['workspace/index.html', 'workspace/sass/style.sass', 'workspace/css/style.css', 'workspace/js/scripts.js']
+  	    },
+  	    options: {
+  	        server: {
+  	            baseDir: ["workspace/sass/", "workspace/", "workspace/css/", "workspace/js/"]
+  	        },
+  	        watchTask: true
+  	    }
+  	},
+
+    jshint: {
+      all: ['workspace/js/*.js']
+    }
   });
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task(s).
 
-  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch', 'jshint']);
+  grunt.registerTask('jshint', ['jshint']);
 };
