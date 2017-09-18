@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: white;
+  font-family: "Open Sans", sans-serif; }
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
+
+.col-offset-12 {
+  margin-left: 100%; }
+
+/*----------HEADER----------*/
+header {
+  background-color: #313332;
+  color: #FFF;
+  max-height: 100px; }
+  header ul {
+    text-align: right; }
+  header li {
+    display: inline-block; }
+
+.nav {
+  list-style-type: none; }
+  .nav a {
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold; }
+    .nav a:hover {
+      color: #08c7f1; }
+
+.logo img {
+  padding: 10px 0;
+  margin: 20px; }
+
+/*---------HERO--------*/
+.hero {
+  height: calc(100vh - 100px);
+  background: url("https://static.pexels.com/photos/34199/pexels-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  box-shadow: 2px 2px 20px #313234; }
+
+.slogan {
+  background-color: rgba(49, 50, 52, 0.5);
+  position: relative;
+  top: 200px;
+  padding: 0 25px;
+  box-shadow: 2px 2px 20px #313234;
+  cursor: default; }
+  .slogan h1 {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 45px;
+    text-transform: uppercase; }
+
+.bold-slogan {
+  font-weight: 700; }
+
+/*---------BENEFITS----------*/
+.single-icon {
+  text-align: center; }
+
+.benefits {
+  padding-top: 60px; }
+  .benefits .single-icon .fa {
+    font-size: 150px;
+    color: #313332; }
+    .benefits .single-icon .fa:hover {
+      color: #00c7e8;
+      cursor: pointer;
+      transition: .3s; }
+    .benefits .single-icon .fa h2 {
+      font-size: 30px;
+      margin: 0;
+      text-transform: uppercase; }
+  .benefits .single-icon p {
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #9c9c9c; }
+
+/*---------FEATURED--------*/
+.featured {
+  text-align: center;
+  padding-top: 50px; }
+  .featured h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #313332;
+    text-transform: uppercase; }
+  .featured p {
+    font-size: 25px;
+    color: #9c9c9c;
+    font-weight: 200; }
+
+/*-------GALLERY-------*/
+.gallery {
+  margin-top: 40px;
+  box-shadow: 2px 2px 20px #313234; }
+  .gallery [class*="col-"] {
+    padding: 0; }
+  .gallery div {
+    background-size: cover; }
+  .gallery .pic1 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108524_pexels-photo.jpg"); }
+  .gallery .pic2 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108552_pexels-photo1.jpg"); }
+  .gallery .pic3 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108549_pexels-photo2.jpg"); }
+  .gallery .pic4 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108559_pexels-photo3.jpg"); }
+  .gallery .pic5 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108554_pexels-photo-11839.jpeg"); }
+  .gallery .pic6 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108553_wood-night-camera-vintage.jpg"); }
+  .gallery .pic7 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108545_pexels-photo4.jpg"); }
+  .gallery .pic8 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108562_pexels-photo5.jpg"); }
+  .gallery .pic9 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108548_pexels-photo6.jpg"); }
+  .gallery .pic10 {
+    background-image: url("http://zmniejszacz.pl/zdjecie/2017/8/17/9108550_houses-lights-night-street.jpg"); }
+  .gallery .layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 180px;
+    position: relative;
+    opacity: 0; }
+    .gallery .layer:hover {
+      opacity: 1;
+      transition: .3s;
+      cursor: pointer; }
+  .gallery .icon-layer, .gallery .fa.fa-link, .gallery .fa.fa-search {
+    color: #FFF;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .gallery .fa.fa-link:hover, .gallery .fa.fa-search:hover {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 25%;
+    background-color: #FFF;
+    color: black;
+    transition: .3s; }
+  .gallery .fa.fa-link {
+    left: 40%; }
+  .gallery .fa.fa-search {
+    left: 60%; }
+
+/*------WORKERS------*/
+.workers {
+  text-align: center;
+  margin-top: 100px; }
+
+.worker-img-properties {
+  background-size: cover;
+  border-radius: 50%;
+  height: 275.5px;
+  width: 275.5px;
+  margin: 0 auto; }
+
+.single-worker {
+  padding: 0 10px; }
+  .single-worker h3 {
+    color: #5b5b59;
+    font-size: 25px; }
+
+.worker1 {
+  background-image: url("http://www.bullz-eye.com/wordpress/wp-content/uploads/2017/07/Marlon-Brando-The-Godfather.jpg"); }
+
+.worker2 {
+  background-image: url("https://jackflacco.files.wordpress.com/2015/03/godfather-michael-corleone-al-pacino.jpg"); }
+
+.worker3 {
+  background-image: url("http://static.tvtropes.org/pmwiki/pub/images/sonny_corleone_3128.jpg"); }
+
+.worker4 {
+  background-image: url("http://www.nationalcrimesyndicate.com/wp-content/uploads/2015/12/Vlcsnap-2010-06-03-17h34m16s91-1024x576.png"); }
+
+.worker-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  height: 275.5px;
+  width: 275.5px;
+  opacity: 0;
+  box-shadow: 2px 2px 20px #313234;
+  position: relative; }
+  .worker-layer:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s; }
+  .worker-layer h4 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #FFF;
+    transform: translate(-50%, -50%); }
+
+/*-----PROMOTION-----*/
+.promotion {
+  margin-top: 120px;
+  background-image: url("http://eskipaper.com/images/dark-background-4.jpg");
+  background-size: cover;
+  box-shadow: 2px 2px 20px #313234;
+  color: #FFF;
+  height: 500px;
+  overflow: hidden; }
+
+.ipad-pic {
+  background-image: url("http://www.pngmart.com/files/3/IPad-Tablet-PNG-File.png");
+  background-size: cover;
+  margin-top: 35px;
+  height: 465px; }
+
+.text-properties {
+  margin-top: 60px;
+  padding: 20px; }
+  .text-properties h1 {
+    font-size: 45px;
+    text-transform: uppercase; }
+  .text-properties p {
+    font-size: 17px;
+    font-weight: 200;
+    padding: 10px;
+    text-align: left; }
+
+/*-----NUMBERS-----*/
+.numbers {
+  text-align: center;
+  margin-top: 100px; }
+  .numbers h1 {
+    color: #313332;
+    font-size: 65px;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px #313332;
+    line-height: 0; }
+  .numbers h2 {
+    margin-top: 0;
+    padding-top: 0;
+    color: #00c5ef;
+    text-transform: uppercase;
+    font-size: 20px; }
+
+.number-size {
+  font-size: 75px; }
+
+/*-----FOOTER-----*/
+footer {
+  background-color: #313332;
+  color: #FFF;
+  margin-top: 100px;
+  box-shadow: 2px 2px 20px #313234;
+  height: auto; }
+  footer .footer-col {
+    padding: 40px 40px 0 0;
+    margin-bottom: 50px; }
+    footer .footer-col h2 {
+      font-size: 35px;
+      text-transform: uppercase; }
+      footer .footer-col h2:after {
+        content: "             -----------";
+        letter-spacing: -.1em;
+        font-weight: 200; }
+    footer .footer-col p {
+      font-size: 20px;
+      line-height: 25px;
+      text-align: left;
+      letter-spacing: 0.5px;
+      font-weight: 200; }
+  footer .get-in-touch h4 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-weight: 700; }
+  footer .get-in-touch .bold-font p {
+    text-align: center;
+    font-weight: 600; }
+  footer .social-media i {
+    font-size: 38px;
+    display: inline-block;
+    color: #01CBE3;
+    margin-right: 10px;
+    margin-top: 10px; }
+    footer .social-media i:hover {
+      transform: scale(1.4);
+      opacity: 0.8;
+      cursor: pointer;
+      transition: .3s; }
+
+.copyrights {
+  background-color: #252726;
+  text-align: center;
+  color: #FFF; }
+
+/*-----MEDIA QUERIES-----*/
+@media (max-width: 767px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%; }
+  .col-s-2 {
+    width: 16.66%; }
+  .col-s-3 {
+    width: 25%; }
+  .col-s-4 {
+    width: 33.33%; }
+  .col-s-5 {
+    width: 41.66%; }
+  .col-s-6 {
+    width: 50%; }
+  .col-s-7 {
+    width: 58.33%; }
+  .col-s-8 {
+    width: 66.66%; }
+  .col-s-9 {
+    width: 75%; }
+  .col-s-10 {
+    width: 83.33%; }
+  .col-s-11 {
+    width: 91.66%; }
+  .col-s-12 {
+    width: 100%; }
+  .col-s-offset-0 {
+    margin-left: 0; }
+  header {
+    max-height: initial; }
+    header li {
+      display: block;
+      float: none; }
+    header ul {
+      padding: 0;
+      text-align: center; }
+  .nav {
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+  .logo {
+    text-align: center; }
+  .gallery .layer {
+    min-height: 240px; }
+  .hero {
+    height: 100vh; }
+  .promotion {
+    height: initial; }
+  .text-properties h1 {
+    text-align: center; }
+  footer .footer-col {
+    padding: 10px; }
+    footer .footer-col h2 {
+      text-align: center; }
+      footer .footer-col h2:after {
+        content: "             ------"; }
+  footer .about-us p {
+    text-align: center; }
+  footer .get-in-touch p {
+    text-align: left; }
+  footer .get-in-touch h4 {
+    text-align: center; }
+  footer .social-media {
+    text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 900px) {
+  header li:nth-child(4) {
+    clear: right; } }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* For desktop: */
+  .col-m-1 {
+    width: 8.33%; }
+  .col-m-2 {
+    width: 16.66%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-4 {
+    width: 33.33%; }
+  .col-m-5 {
+    width: 41.66%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-7 {
+    width: 58.33%; }
+  .col-m-8 {
+    width: 66.66%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-10 {
+    width: 83.33%; }
+  .col-m-11 {
+    width: 91.66%; }
+  .col-m-12 {
+    width: 100%; }
+  .col-m-offset-4 {
+    margin-left: 33.33%; }
+  header {
+    max-height: initial; }
+  .promotion {
+    height: initial; }
+  footer .footer-col {
+    padding: 10px; }
+    footer .footer-col h2 {
+      text-align: center; }
+  footer .about-us p {
+    text-align: center; }
+  footer .get-in-touch p {
+    text-align: left; }
+  footer .get-in-touch h4 {
+    text-align: center; }
+  footer .social-media {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
