@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 	},
 	browserSync: {
 	    bsFiles: {
-	        src : ['workspace/index.html', 'workspace/sass/style.sass', 'workspace/css/style.css', 'workspace/js/scrips.js']
+	        src : ['workspace/index.html', 'workspace/sass/style.sass', 'workspace/css/style.css', 'workspace/js/scripts.js']
 	    },
 	    options: {
 	        server: {
