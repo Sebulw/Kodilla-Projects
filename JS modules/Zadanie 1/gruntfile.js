@@ -2,49 +2,49 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-  	sass: {
-  		options: {
-  			sourceMap: true
-  		},
-  		dist: {
-  			files: {
-  				'workspace/css/style.css': 'workspace/sass/style.sass'
-  			}
-  		}
-  	},
+    sass: {
+      options: {
+        sourceMap: true
+      },
+      dist: {
+        files: {
+          'workspace/css/style.css': 'workspace/sass/style.sass'
+        }
+      }
+    },
 
-  	imagemin: {
-  		dynamic: {
-  			files: [{
-  				expand: true,
-  				cwd: 'workspace/images/',
-  				src: ['**/*.{png,jpg,gif}'],
-  				dest: 'build/'
-  			}]
-  		}
-  	},
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'workspace/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'build/'
+        }]
+      }
+    },
 
-  	watch: {
-	    scripts: {
-	        files: ['workspace/sass/style.sass'],
-	        tasks: ['sass'],
-	        options: {
-	            spawn: false,
-	        },
-	    }
-  	},
+    watch: {
+      scripts: {
+          files: ['workspace/sass/style.sass'],
+          tasks: ['sass'],
+          options: {
+              spawn: false,
+          },
+      }
+    },
 
-  	browserSync: {
-  	    bsFiles: {
-  	        src : ['workspace/index.html', 'workspace/sass/style.sass', 'workspace/css/style.css', 'workspace/js/scripts.js']
-  	    },
-  	    options: {
-  	        server: {
-  	            baseDir: ["workspace/sass/", "workspace/", "workspace/css/", "workspace/js/"]
-  	        },
-  	        watchTask: true
-  	    }
-  	},
+    browserSync: {
+        bsFiles: {
+            src : ['workspace/index.html', 'workspace/sass/style.sass', 'workspace/css/style.css', 'workspace/js/scripts.js']
+        },
+        options: {
+            server: {
+                baseDir: ["workspace/sass/", "workspace/", "workspace/css/", "workspace/js/"]
+            },
+            watchTask: true
+        }
+    },
 
     jshint: {
       all: ['workspace/js/*.js']
@@ -58,6 +58,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task(s).
 
-  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch', 'jshint']);
-  grunt.registerTask('jshint', ['jshint']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
+  grunt.registerTask('hint', ['jshint']);
 };
